@@ -38,7 +38,7 @@ const Services = () => {
 						<div className="service-desc">
 							<h4 className="heading-4">Web Development</h4>
 							<p>
-								Don't just take our word for it hear what our customers have to say about us
+								Don`t just take our word for it hear what our customers have to say about us
 							</p>
 							<a href="about.html" className="btn-text">
 								Read More
@@ -54,7 +54,7 @@ const Services = () => {
 						<div className="service-desc">
 							<h4 className="heading-4">Web Design</h4>
 							<p>
-								Don't just take our word for it hear what our customers have to say about us
+								Don`t just take our word for it hear what our customers have to say about us
 							</p>
 							<a href="about.html" className="btn-text">
 								Read More
@@ -70,7 +70,7 @@ const Services = () => {
 						<div className="service-desc">
 							<h4 className="heading-4">Digital Marketing</h4>
 							<p>
-								Don't just take our word for it hear what our customers have to say about us
+								Don`t just take our word for it hear what our customers have to say about us
 							</p>
 							<a href="about.html" className="btn-text">
 								Read More
@@ -86,7 +86,7 @@ const Services = () => {
 						<div className="service-desc">
 							<h4 className="heading-4">Business Strategy</h4>
 							<p>
-								Don't just take our word for it hear what our customers have to say about us
+								Don`t just take our word for it hear what our customers have to say about us
 							</p>
 							<a href="about.html" className="btn-text">
 								Read More

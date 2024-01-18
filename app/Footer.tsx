@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -14,10 +15,10 @@ const Footer = () => {
 					<div className="row">
 						<div className="col-xl-5">
 							<h2 className="heading-2 mb-40">
-								Let's Talk! about our <br /> awesome services
+								Some info about our <br /> awesome services
 							</h2>
 							<h4 className="heading-4 mb-0">
-								<a href="contact.html">LET'S START WORK</a>
+								<Link href="/contact">CONTACT US</Link>
 							</h4>
 						</div>
 						<div className="col-xl-3">
@@ -65,28 +66,28 @@ const Footer = () => {
 						<div className="footer-widget footer-link">
 							<ul className="footer-list">
 								<li>
-									<a href="about.html">
+									<Link href="/about">
 										<i className="fa-solid fa-chevron-right"></i>
 										About Us 
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a href="service.html">
+									<Link href="/services">
 										<i className="fa-solid fa-chevron-right"></i>
 										Services
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a href="gallery.html">
+									<Link href="/portfolio">
 										<i className="fa-solid fa-chevron-right"></i>
 										Portfolio
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a href="contact.html">
+									<Link href="/contact">
 										<i className="fa-solid fa-chevron-right"></i>
 										Contact us
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>
@@ -95,28 +96,28 @@ const Footer = () => {
 						<div className="footer-widget footer-link">
 							<ul className="footer-list">
 								<li>
-									<a href="about.html">
+									<Link href="/blog">
 										<i className="fa-solid fa-chevron-right"></i>
 										Latest News
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a href="service-single.html">
+									<Link href="#npm ">
 										<i className="fa-solid fa-chevron-right"></i>
 										Case Study
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a href="product-single.html">
+									<Link href="#">
 										<i className="fa-solid fa-chevron-right"></i>
 										App Development
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a href="shop.html">
+									<Link href="#">
 										<i className="fa-solid fa-chevron-right"></i>
 										Shop
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>

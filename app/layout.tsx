@@ -62,25 +62,25 @@ export default function RootLayout({
         {/* <!-- End Scroll top--> */}
         {/* 	
 	<!-- jQuery Frameworks    ============================================= --> */}
-        <script src="assets/js/jquery-3.7.0.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/bsnav.min.js"></script>
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/count-to.js"></script>
-        <script src="assets/js/progress-bar.min.js"></script>
-        <script src="assets/js/jquery.easypiechart.js"></script>
-        <script src="assets/js/typed.js"></script>
-        <script src="assets/js/YTPlayer.min.js"></script>
-        <script src="assets/js/jquery.appear.js"></script>
-        <script src="assets/js/jquery.easing.min.js"></script>
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <script src="assets/js/active-class.js"></script>
-        <script src="assets/js/jquery-ui.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery-3.7.0.min.js" async></script>
+        <script src="assets/js/popper.min.js" async></script>
+        <script src="assets/js/bootstrap.min.js" async></script>
+        <script src="assets/js/bsnav.min.js" async></script>
+        <script src="assets/js/jquery.magnific-popup.min.js" async></script>
+        <script src="assets/js/isotope.pkgd.min.js" async></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js" async></script>
+        <script src="assets/js/wow.min.js" async></script>
+        <script src="assets/js/count-to.js" async></script>
+        <script src="assets/js/progress-bar.min.js" async></script>
+        <script src="assets/js/jquery.easypiechart.js" async></script>
+        <script src="assets/js/typed.js" async></script>
+        <script src="assets/js/YTPlayer.min.js" async></script>
+        <script src="assets/js/jquery.appear.js" async></script>
+        <script src="assets/js/jquery.easing.min.js" async></script>
+        <script src="assets/js/swiper-bundle.min.js" async></script>
+        <script src="assets/js/active-class.js" async></script>
+        <script src="assets/js/jquery-ui.min.js" async></script>
+        <script src="assets/js/main.js" async></script>
       </body>
     </html>
   );
