@@ -24,7 +24,7 @@ export default function Home() {
     <main className="main">
       {/* <h1>{name}</h1> */}
      <Header/> 
-     <Slider/>
+     <Slider/> 
      <About/>
      <Services/>
      <Footer/>

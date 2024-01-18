@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Services = () => {
@@ -29,7 +30,7 @@ const Services = () => {
 				</div>
 				<div className="service-wpr grid-4">
 					<div className="service-box">
-						<img src="assets/img/vector/wash.png" className="service-wash" alt="no image"/>
+						<Image src="/assets/img/vector/wash.png" className="service-wash" width="535" height="724" alt="no image"/>
 						<div className="service-icon pos-rel">
 							<i className="flaticon-server"></i>
 							<span className="service-c-1"></span>
@@ -45,7 +46,7 @@ const Services = () => {
 						</div>
 					</div>
 					<div className="service-box">
-						<img src="assets/img/vector/wash.png" className="service-wash" alt="no image"/>
+						<Image src="/assets/img/vector/wash.png" className="service-wash" width="535" height="724" alt="no image"/>
 						<div className="service-icon pos-rel">
 							<i className="flaticon-heart-condition"></i>
 							<span className="service-c-1"></span>
@@ -61,7 +62,7 @@ const Services = () => {
 						</div>
 					</div>
 					<div className="service-box">
-						<img src="assets/img/vector/wash.png" className="service-wash" alt="no image"/>
+						<Image src="/assets/img/vector/wash.png" className="service-wash" width="535" height="724" alt="no image"/>
 						<div className="service-icon pos-rel">
 							<i className="flaticon-research"></i>
 							<span className="service-c-1"></span>
@@ -77,7 +78,7 @@ const Services = () => {
 						</div>
 					</div>
 					<div className="service-box">
-						<img src="assets/img/vector/wash.png" className="service-wash" alt="no image"/>
+						<Image src="/assets/img/vector/wash.png" className="service-wash" width="535" height="724" alt="no image"/>
 						<div className="service-icon pos-rel">
 							<i className="flaticon-startup-1"></i>
 							<span className="service-c-1"></span>

@@ -1,9 +1,10 @@
+import Image from 'next/image';
 import React from 'react'
 
 const Slider = () => {
 
  const styles = {
-    background:"url(assets/img/pictures/slider-1.jpg)",
+    background:"url(/assets/img/pictures/slider-1.jpg)",
        
  };
 
@@ -20,7 +21,7 @@ const Slider = () => {
 				<span className="hero-c-3"></span>
 				<span className="hero-c-4"></span>
 				<span className="hero-c-5"></span>
-				<img src="assets/img/dot/dot-3.png" className="hero-dot-3" alt="no image"/>
+				<Image src="/assets/img/dot/dot-3.png" width="74" height="196" className="hero-dot-3" alt="no image"/>
 			</div>
 			<div className="hero-single">
 				<div className="container">
@@ -49,7 +50,7 @@ const Slider = () => {
 							</div>
 							<div className="col-xl-5">
 								<div className="hero-pic">
-									<img src="assets/img/person/hdr-2.png" alt="no image"/>
+									<Image src="/assets/img/person/hdr-2.png" width="642" height="670" alt="no image"/>
 								</div>
 							</div>
 						</div>

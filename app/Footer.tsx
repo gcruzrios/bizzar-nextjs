@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Footer = () => {
@@ -122,14 +123,14 @@ const Footer = () => {
 					</div>
 					<div className="col-xl-4 col-lg-6 col-md-6">
 						<div className="footer-gallery cs-gap-2 grid-4">
-							<img src="assets/img/pictures/de-1.jpg" alt="no image"/>
-							<img src="assets/img/pictures/de-2.jpg" alt="no image"/>
-							<img src="assets/img/pictures/de-1.jpg" alt="no image"/>
-							<img src="assets/img/pictures/de-2.jpg" alt="no image"/>
-							<img src="assets/img/pictures/de-1.jpg" alt="no image"/>
-							<img src="assets/img/pictures/de-2.jpg" alt="no image"/>
-							<img src="assets/img/pictures/de-1.jpg" alt="no image"/>
-							<img src="assets/img/pictures/de-2.jpg" alt="no image"/>
+							<Image src="/assets/img/pictures/de-1.jpg" width="80" height="80" alt="no image"/>
+							<Image src="/assets/img/pictures/de-2.jpg" width="80" height="80" alt="no image"/>
+							<Image src="/assets/img/pictures/de-1.jpg" width="80" height="80" alt="no image"/>
+							<Image src="/assets/img/pictures/de-2.jpg" width="80" height="80" alt="no image"/>
+							<Image src="/assets/img/pictures/de-1.jpg" width="80" height="80" alt="no image"/>
+							<Image src="/assets/img/pictures/de-2.jpg" width="80" height="80" alt="no image"/>
+							<Image src="/assets/img/pictures/de-1.jpg" width="80" height="80" alt="no image"/>
+							<Image src="/assets/img/pictures/de-2.jpg" width="80" height="80" alt="no image"/>
 						</div>
 					</div>
 				</div>

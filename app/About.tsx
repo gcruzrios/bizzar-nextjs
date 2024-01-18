@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const About = () => {
@@ -10,10 +11,10 @@ const About = () => {
 				<div className="about-wpr grid-2">
 					<div className="about-left">
 						<div className="about-pics pos-rel">
-							<img src="assets/img/pictures/about-1.jpg" className="about-1" alt="no image"/>
-							<img src="assets/img/pictures/about-2.jpg" className="about-2" alt="no image"/>
-							<img src="assets/img/pictures/about-3.jpg" className="about-3" alt="no image"/>
-							<img src="assets/img/vector/about.png" className="about-v-4" alt="no image"/>
+							<Image src="/assets/img/pictures/about-1.jpg" width="400" height="470" className="about-1" alt="no image"/>
+							<Image src="/assets/img/pictures/about-2.jpg" width="300" height="200" className="about-2" alt="no image"/>
+							<Image src="/assets/img/pictures/about-3.jpg" width="280" height="200" className="about-3" alt="no image"/>
+							<Image src="/assets/img/vector/about.png" width="250" height="227" className="about-v-4" alt="no image"/>
 							<div className="pl">
 								<a href="#" className="item popup-youtube play-bt">
 									<i className="ti-control-play"></i>

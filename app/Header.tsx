@@ -1,7 +1,17 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+// const logosize{
+
+// 	width:'88',
+// 	height:'60'
+//  }	
+
 const Header = () => {
+
+ 
+
   return (
     <div>
 {/* 
@@ -14,7 +24,7 @@ const Header = () => {
 				<div className="navbar-container">
 					<div className="navbar-extra-logo">
 						<Link href="/">
-							<img src="assets/img/logo/logo-white.png" className="logo-outside" alt="thumb"/>
+							<Image  src="/assets/img/logo/logo-white.png" width="188" height="60" className="logo-outside" alt="thumb"/>
 						</Link>
 					</div>
 					<div className="top-header-menu">
@@ -52,8 +62,8 @@ const Header = () => {
 						<div className="navbar-menu-opt">
 							<div className="navbar-brand-tog">
 								<Link className="navbar-brand g-nop" href="/">
-									<img src="assets/img/logo/logo-white.png" className="logo-display" alt="thumb"/>
-									<img src="assets/img/logo/logo.png" className="logo-scrolled" alt="thumb"/>
+									<Image src="/assets/img/logo/logo-white.png" width="188" height="60" className="logo-display" alt="thumb"/>
+									<Image src="/assets/img/logo/logo.png" width="188" height="60"  className="logo-scrolled" alt="thumb"/> 
 								</Link>
 								<button className="navbar-toggler toggler-spring">
 									<span className="navbar-toggler-icon"></span>
@@ -61,8 +71,8 @@ const Header = () => {
 							</div>
 							<div className="collapse navbar-collapse justify-content-md-between">
 								<Link className="navbar-brand nop" href="/">
-									<img src="assets/img/logo/logo-white.png" className="logo-display" alt="thumb"/>
-									<img src="assets/img/logo/logo.png" className="logo-scrolled" alt="thumb"/>
+									<Image src="/assets/img/logo/logo-white.png" width="188" height="60" className="logo-display" alt="thumb"/>
+									<Image src="/assets/img/logo/logo.png" width="188" height="60" className="logo-scrolled" alt="thumb"/>
 								</Link>
 								<ul className="navbar-nav navbar-mobile justify-content-md-center w-100">
 									<li className="nav-item dropdown fadeup">
