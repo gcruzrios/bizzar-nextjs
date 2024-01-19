@@ -83,7 +83,7 @@ const Header = () => {
 										<Link className="nav-link" href="/services">Services <i className="ti-plus"></i></Link>
 										
 									</li>
-									<li className="nav-item"><a className="nav-link" href="/about">About Us</a></li>
+									<li className="nav-item"><a className="nav-link" href="/about">About Us <i className="ti-plus"></i></a></li>
 									{/* <li className="nav-item dropdown fadeup">
 										<a className="nav-link" href="#">Shop <i className="ti-plus"></i></a>
 										<ul className="navbar-nav">
