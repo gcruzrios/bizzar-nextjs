@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const AboutContent = () => {
@@ -10,14 +12,14 @@ const AboutContent = () => {
 				<div className="about-wpr-2 grid-2">
 					<div className="about-left-2">
 						<div className="about-left-pics-2 pos-rel">
-							<img src="assets/img/pictures/about-2-1.jpg" className="about-2-1" alt="no image" />
-							<img src="assets/img/pictures/about-2-2.jpg" className="about-2-2" alt="no image" />
+							<Image src="/assets/img/pictures/about-2-1.jpg" width="400" height="460" className="about-2-1" alt="no image" />
+							<Image src="/assets/img/pictures/about-2-2.jpg" width="400" height="267" className="about-2-2" alt="no image" />
 							<div className="about-exp-yr pos-rel">
 								<div className="about-exp">
 									<h2 className="heading-2">25+</h2>
 									<h5 className="heading-5 mb-0">Years Experience</h5>
 								</div>
-								<img src="assets/img/person/person-1.png" alt="no image" className="about-exp-pic" />
+								<Image src="/assets/img/person/person-1.png" width="350" height="302" alt="no image" className="about-exp-pic" />
 							</div>
 						</div>
 					</div>
@@ -28,7 +30,7 @@ const AboutContent = () => {
 								About us
 							</span>
 							<h2 className="heading-1 mb-0">
-								Let’s build your success with our <span>Business</span> solution
+								Let´s build your success with our <span>Business</span> solution
 							</h2>
 						</div>
 						<p className="mb-30">
@@ -51,9 +53,9 @@ const AboutContent = () => {
 								</p>
 							</div>
 						</div>
-						<a href="about.html" className="btn-1 btn-md btn-border-2">
+						<Link href="/about" className="btn-1 btn-md btn-border-2">
 							Discover More
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

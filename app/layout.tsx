@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 //import "./globals.css";
-
+import AuthProvider from './api/auth/Provider'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,10 +51,10 @@ export default function RootLayout({
         <link href="assets/css/responsive.css" rel="stylesheet" />
         {/* <!-- ========== End Stylesheet ========== --> */}
       </head>
-       
+        <AuthProvider>
       <body id="bdy" className={inter.className}>
         {children}
-
+       
         {/* <!-- Start Scroll top	============================================= --> */}
         <a href="#bdy" id="scrtop" className="smooth-menu">
           <i className="ti-arrow-up"></i>
@@ -82,6 +82,7 @@ export default function RootLayout({
         <script src="assets/js/jquery-ui.min.js" async></script>
         <script src="assets/js/main.js" async></script>
       </body>
+      </AuthProvider>
     </html>
   );
 }

@@ -1,3 +1,5 @@
+'use client'
+import { useSession } from 'next-auth/react';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -10,7 +12,7 @@ import React from 'react'
 
 const Header = () => {
 
- 
+  const {status, data:session } = useSession();
 
   return (
     <div>
@@ -101,7 +103,14 @@ const Header = () => {
 										<Link className="nav-link" href="/contact">Contact</Link></li>
 								</ul>
 								<div className="search-cart nav-profile">
-									<Link href="/api/auth/signin" className="btn-1 btn-sm">Login</Link>
+									{status === 'authenticated' && <div>{session.user!.name}{" "}
+									<Link href='/api/auth/signout'><i className="fas fa-sign-out-alt"></i></Link>
+									</div>}
+									{status === 'unauthenticated' && <Link href="/api/auth/signin" className="btn-1 btn-sm justify-content: space-between;"><i className="fas fa-sign-in-alt"></i>  Login</Link>
+									}
+
+
+									{/* <Link href="/api/auth/signin" className="btn-1 btn-sm">Login</Link> */}
 								</div>
 							</div>
 						</div>
