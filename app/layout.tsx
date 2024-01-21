@@ -50,6 +50,10 @@ export default function RootLayout({
         <link href="style.css" rel="stylesheet" />
         <link href="assets/css/responsive.css" rel="stylesheet" />
         {/* <!-- ========== End Stylesheet ========== --> */}
+
+        
+        
+
       </head>
         <AuthProvider>
       <body id="bdy" className={inter.className}>
@@ -81,6 +85,15 @@ export default function RootLayout({
         <script src="assets/js/active-class.js" async></script>
         <script src="assets/js/jquery-ui.min.js" async></script>
         <script src="assets/js/main.js" async></script>
+      
+
+        <script src="https://cdn.tiny.cloud/1/vnlr8o1xihx7x1v7a2pe4xbuurvswh3n1h4e1nlsrjl0qgv1/tinymce/6/tinymce.min.js"  async ></script>;
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" async></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" async></script>
+        
+
+
       </body>
       </AuthProvider>
     </html>
