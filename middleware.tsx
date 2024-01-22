@@ -20,5 +20,5 @@ export const config = {
      ?= cero o un parametro
     */
 
-    matcher: ['/admin/:id*']
+    matcher: ['/posts/:id*']
 }
