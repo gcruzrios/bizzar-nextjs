@@ -9,7 +9,7 @@ interface Post {
 }
 
 const CreatePost = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts?_start=0&_limit=5", {
+  const res = await fetch("http://localhost:3000/api/posts", {
     cache: "no-store",
   });
 
@@ -25,7 +25,7 @@ const CreatePost = async () => {
           {articles.map((article, index) => (
             <li key={index}>
               <h3>{article.title}</h3>
-              <p>{article.content}</p>
+              <p>{article.subtitle}</p>
             </li>
           ))}
         </ul>

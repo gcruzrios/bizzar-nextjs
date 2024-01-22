@@ -31,8 +31,9 @@ export async function GET (request: NextRequest)
 export async function POST (request: NextRequest)
 {
 const body =  await request.json();
+
 if (!body.title)
-    return NextResponse.json({error: "el titulo del post es obligatorio"}, {status: 404})
+     return NextResponse.json({error: "el titulo del post es obligatorio"}, {status: 404})
 
     
 // Prisma create Producto
@@ -41,8 +42,8 @@ if (!body.title)
        subtitle : body.subtitle,
        excerpt : body.excerpt,
        
-        content : body.content
-        
+        content : body.content,
+        authorId : body.authorid
     }})
     return NextResponse.json(nuevopost);
 }

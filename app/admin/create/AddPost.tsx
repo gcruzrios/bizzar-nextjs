@@ -1,30 +1,82 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Editor } from "@tinymce/tinymce-react"; //1. Import TinyMCE Editor
+import { TinyMCE } from "tinymce";
+import { any } from "zod";
+
+
+declare global {
+  interface Window {
+    tinymce: TinyMCE;
+  }
+}
 
 const AddPost = (props: any) => {
   //const [articles, setArticles] = useState(Post[]);
-
+ 
   const [title, setTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
   const [excerpt, setExcerpt] = useState("");
   const [content, setContent] = useState("");
+  const [authorid, setAuthorid] = useState("");
 
+  
+
+
+  const editorRef = useRef(null);
+  // const log = () => {
+  //   if (editorRef.current) {
+  //     console.log(editorRef.current.getContent());
+  //   }
   const addArticle = () => {
-    console.log(title, subtitle, excerpt, content);
+
+  
+    
+
+
+    const stringToHTML = window.tinymce
+    .get("content")
+    .getContent({ format: "html" }); //Set up a constant that gets the TinyMCE text area content for use in the CMS demo
+    console.log(stringToHTML);
+    
+    setContent(stringToHTML);
+    
+    setAuthorid('clrkrkwzv0000j00v3ofmhdj1');
+
+   
+
+   const post = JSON.stringify({title:title, subtitle:subtitle, excerpt:excerpt, content:stringToHTML, authorId: authorid});
+
+
+   console.log(post);
+   
+
+
+// Agregar contenido en la BD
+
+
+    fetch('http://localhost:3000/api/posts', {
+        method: 'POST',
+        headers: {
+           
+            'Content-Type': 'application/json',
+        },
+        body:  post ,
+       
+    })
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+
+
 
     setTitle("");
     setSubtitle("");
     setExcerpt("");
-    // setContent("");
 
-    //setContent(window.tinymce.activeEditor.setContent(""));
+    setContent(window.tinymce.activeEditor.setContent(""));
 
-    //var myContent = tinymce.activeEditor.getContent();
 
-    // const stringToHTML = window.tinymce
-    // .get("content")
-    // .getContent({ format: "html" }); //Set up a constant that gets the TinyMCE text area content for use in the CMS demo
+    
   };
 
   return (
@@ -102,10 +154,8 @@ const AddPost = (props: any) => {
                   //apiKey={process.env.TINYMCE_APIKEY }
                   apiKey="vnlr8o1xihx7x1v7a2pe4xbuurvswh3n1h4e1nlsrjl0qgv1"
                   id="content" //Add the content id back in
-                  //value={content}
-                  //onChange={(e) => setContent(e.target.value)}
-
-                  //apiKey=''
+                  // onChange={(e) => setContent(e.target.value)}
+                  // value={content}
                   init={{
                     height: 300,
                     plugins: [
