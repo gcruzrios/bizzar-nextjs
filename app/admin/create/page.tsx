@@ -18,6 +18,7 @@ const CreatePost = async () => {
   return (
     <main className="main">
       <AddPost/>
+      <div className="container">
       <h2>Articles:</h2>
       {/* Lista de articulos */}
       <div>
@@ -29,6 +30,7 @@ const CreatePost = async () => {
             </li>
           ))}
         </ul>
+      </div>
       </div>
 
       {/* <script>
