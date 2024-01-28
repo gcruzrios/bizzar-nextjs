@@ -16,7 +16,7 @@ const NotFound = () => {
 					<div className="page-not-right d-flex align-items-center">
 						<div className="page-not-righ-ele">
 							<h2 className="headin-1">404</h2>
-							<h4 className="heading-4">Look like you're lost</h4>
+							<h4 className="heading-4">Look like you are lost</h4>
 							<p className="mb-40">the page you are looking for not Found!</p>
 							<Link href="/" className="btn-3">Go Back</Link>
 						</div>
